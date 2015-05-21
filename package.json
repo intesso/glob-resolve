@@ -1,6 +1,6 @@
 {
   "name": "glob-resolve",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "resolves a glob filename array into it's segments and transforms it into a new array.",
   "main": "index.js",
   "scripts": {

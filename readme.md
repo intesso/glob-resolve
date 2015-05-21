@@ -150,13 +150,13 @@ result == {
 
 # functions
 
-## glob(srcPattern, destPattern [,options] ,callback)
+## resolve(srcPattern, destPattern [,options] ,callback)
 async glob resove version.
 
-## sync(pattern [,options])
+## resolve.sync(pattern [,options])
 sync glob resove version.
 
-## globvar
+## resolve.globvar
 reference to the `glob-var` module
 
 

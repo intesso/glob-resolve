@@ -1,0 +1,27 @@
+{
+  "name": "glob-resolve",
+  "version": "1.0.0",
+  "description": "resolves a glob filename array into it's segments and transforms it into a new array.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd test && node test.js"
+  },
+  "keywords": [
+    "glob",
+    "var",
+    "variable",
+    "param",
+    "parameter",
+    "transform",
+    "glob transform"
+  ],
+  "author": "Andi Neck",
+  "license": "MIT",
+  "dependencies": {
+    "glob-var": "^1.0.0"
+  },
+  "devDependencies": {
+    "object-equal": "^1.0.0",
+    "tape": "^4.0.0"
+  }
+}

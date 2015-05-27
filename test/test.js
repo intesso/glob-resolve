@@ -87,3 +87,34 @@ test('do sync', function(t) {
   t.end();
 
 });
+
+test('do sync not existing', function(t) {
+  var result = resolve.sync('fixtures-not-here/:module/public', 'public/:module');
+
+  t.ok(result.src);
+  t.ok(result.dest);
+
+  t.equal(result.src.globstars, 0);
+  t.equal(result.dest.globstars, 0);
+
+  t.equal(result.src.paths.length, 0);
+  t.equal(result.dest.paths.length, 0);
+
+  t.equal(result.src.values.length, 0);
+  t.equal(result.dest.values.length, 0);
+
+  t.equal(result.dest.vars.length, 1);
+  result.dest.vars[0].index = undefined;
+  t.ok(equal(result.dest.vars[0], {
+      segment: ':module',
+      compiled: '*',
+      type: 'named',
+      name: 'module',
+      globstar: false,
+      index: undefined
+    })
+  );
+
+  t.end();
+
+});

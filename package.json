@@ -1,10 +1,14 @@
 {
   "name": "glob-resolve",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "resolves a glob filename array into it's segments and transforms it into a new array.",
   "main": "index.js",
   "scripts": {
     "test": "cd test && node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intesso/glob-resolve.git"
   },
   "keywords": [
     "glob",
